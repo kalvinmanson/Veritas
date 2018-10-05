@@ -1,0 +1,192 @@
+@import '../assets/css/mixins.scss';
+header {
+  background-color: #333333;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid #c6d2ea;
+  @include transition();
+  @media (max-width: $screen-sm-max) {
+    height: 50px;
+  }
+}
+header .trMenu {
+  display: none;
+  @media (max-width: $screen-sm-max) {
+    display: block;
+    position: absolute;
+    right: 15px;
+    color: #fb3954;
+    padding: 15px;
+  }
+}
+header .logo {
+  display: block;
+  float: left;
+  padding: 15px;
+  @include transition();
+  @media (max-width: $screen-sm-max) {
+    position: absolute;
+    float: none;
+    left: 50%;
+    width: 170px;
+    margin-left: -90px;
+    background-color: #333333;
+  }
+}
+header nav ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  @include transition();
+  @media (max-width: $screen-sm-max) {
+    display: block;
+    padding: 0;
+    margin: 0;
+    max-height: 0.1px;
+    overflow: hidden;
+  }
+}
+header nav ul.deploy {
+  display: block;
+  max-height: 1000px;
+  position: relative;
+  height: 150vh;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 100;
+  text-align: center;
+  padding-top: 100px;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 15px 7px;
+  padding: 10px 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid transparent;
+  @include transition();
+  @media (max-width: $screen-sm-max) {
+    display: block;
+  }
+}
+header nav ul li:hover {
+  border-bottom: 2px solid #fb3954;
+}
+header nav ul li.red {
+  color: #fb3954;
+  margin: 15px 0;
+  @media (max-width: $screen-sm-max) {
+    display: inline-block;
+  }
+}
+header nav ul li.contact {
+  color: #fb3954;
+  border: 2px solid #fb3954;
+}
+header nav ul li.contact:hover {
+  color: #FFFFFF;
+  background-color: rgba(0,0,0,0.3);
+}
+header.mini {
+  height: 50px;
+}
+header.mini .logo {
+  max-width: 70px;
+  max-height: 43px;
+  padding: 10px 15px;
+  overflow-y: hidden;
+}
+header.mini nav ul li {
+  margin: 0;
+}
+.gradBar {
+  display: inline-block;
+  width: 400px;
+  height: 4px;
+  background: #f73955;
+  background: -moz-linear-gradient(left, #f73955 0%, #ae012e 100%);
+  background: -webkit-linear-gradient(left, #f73955 0%,#ae012e 100%);
+  background: linear-gradient(to right, #f73955 0%,#ae012e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73955', endColorstr='#ae012e',GradientType=1 );
+  @media (max-width: $screen-sm-max) {
+    max-width: 200px;
+  }
+}
+.gradCont {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+}
+.readMore {
+  color: #fb3954;
+}
+.readMore i {
+  margin-left: 1em;
+}
+footer .bgPic {
+  background: url(/assets/img/img-footer-gs.jpg);
+  background-size: cover;
+}
+footer .social {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer .social li {
+  color: #fb3954;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 10px 20px;
+}
+footer .bgMid {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 2em;
+}
+footer .bgGray {
+  background-color: #333333;
+}
+footer .logoOp {
+  opacity: 0.6;
+}
+footer .subLinks {
+  display: block;
+  padding: 2em 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+footer .subLinks li {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 0.5em 0;
+  @include transition();
+}
+footer .subLinks li:hover {
+  color: #fb3954;
+}
+footer .legal {
+  font-size: 0.8em;
+}
+footer .legal a {
+  text-decoration: underline;
+  color: #6c757d;
+  padding: 0 7px;
+  @include transition();
+}
+footer .legal a:hover {
+  color: #FFFFFF;
+}
+.resCenter {
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+  }
+}

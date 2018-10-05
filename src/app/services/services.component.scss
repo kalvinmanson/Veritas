@@ -1,0 +1,23 @@
+@import '../../assets/css/mixins.scss';
+.services {
+  background-color: #b0002e;
+  position: relative;
+}
+.services .whiteBar {
+  background-color: #FFFFFF;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.services .card {
+  cursor: pointer;
+  @include transition();
+}
+.services .card:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+}

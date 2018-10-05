@@ -1,0 +1,10 @@
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let slide of slides">
+    <div [style.background-image]="sanitizeImage(slide.img)" class="animated fadeIn bgSlide">
+      <div class="carousel-content">
+        <h3 class="animated flipInX delay10">{{ slide.title }} <span>{{ slide.title2 }}</span></h3>
+        <p class="animated fadeInDown delay15">{{ slide.subtitle }}</p>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>

@@ -1,0 +1,38 @@
+@import '../../assets/css/mixins.scss';
+.bgSlide {
+  background-size: 100%;
+  @media (max-width: $screen-sm-max) {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.carousel-content {
+  padding: 25vh;
+  text-align: center;
+  @media (max-width: $screen-sm-max) {
+    padding: 40vh 10vh 5vh 10vh;
+  }
+}
+.carousel-content h3 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  @media (max-width: $screen-sm-max) {
+    font-size: 2em;
+  }
+}
+.carousel-content h3 span {
+  color: #fb3954;
+}
+.carousel-content p {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 2em;
+  max-width: 700px;
+  font-weight: 300;
+  @media (max-width: $screen-sm-max) {
+    font-size: 1em;
+  }
+}

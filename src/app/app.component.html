@@ -1,0 +1,116 @@
+<header [ngClass]="{'mini': miniHeader}">
+  <div class="logo">
+    <img src="/assets/img/logo-head.png" class="img-fluid">
+  </div>
+  <nav>
+    <span class="trMenu" (click)="menuOpened = true"><i class="fas fa-bars"></i></span>
+    <ul [ngClass]="{'deploy': menuOpened}" (click)="menuOpened = false">
+      <li>HOME</li>
+      <li>WHAT WE DO</li>
+      <li class="red"><i class="fab fa-facebook-f"></i></li>
+      <li class="red"><i class="fab fa-linkedin-in"></i></li>
+      <li class="red"><i class="fab fa-twitter"></i></li>
+      <li class="red"><i class="fab fa-youtube"></i></li>
+      <li class="contact">CONTACT US</li>
+    </ul>
+  </nav>
+</header>
+<app-slider></app-slider>
+<section class="home">
+  <div class="container text-center py-5">
+    <div class="gradBar"></div>
+    <h1 class="py-2">ABOUT BUREAU VERITAS</h1>
+    <p class="py-5 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href="#" class="btn btn-lg btn-danger">WHAT WE DO</a>
+  </div>
+</section>
+<section class="wwd">
+  <video width="100%" controls="" poster="/assets/img/img-services2.jpg" class="d-block d-md-none p-0">
+    <!-- MP4 must be first for iPad! -->
+    <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4"><!-- Safari / iOS, IE9 -->
+    <source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm"><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+    <source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg"><!-- Firefox3.6+ / Opera 10.5+ -->
+  </video>
+  <div class="gradBar d-none d-md-block"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 gradCont">
+        <div class="row">
+          <div class="col-lg-9 ml-auto resCenter">
+            <div class="gradBar d-inline-block d-md-none"></div>
+            <h1 class="py-3">SERVICES</h1>
+            <p class="py-3 pr-lg-5 mr-lg-5 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt dolor sit amet, consectetur ut labore ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore laborum.</p>
+            <p class="pr-lg-5 mr-lg-5 text-right">
+              <a href="#" class="readMore">READ MORE <i class="fas fa-arrow-right animated fadeInLeft infinite"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-0">
+        <video width="100%" controls="" poster="/assets/img/img-services2.jpg" class="d-none d-md-block p-0">
+        	<!-- MP4 must be first for iPad! -->
+        	<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4"><!-- Safari / iOS, IE9 -->
+        	<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm"><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+        	<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg"><!-- Firefox3.6+ / Opera 10.5+ -->
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projects">
+  <div class="container text-center py-5">
+    <div class="gradBar"></div>
+    <h1 class="py-2">FEATURED PROJECTS</h1>
+    <p class="py-5 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <app-services></app-services>
+  <div class="container text-center py-4">
+    <a href="#" class="readMore">VIEW MORE <i class="fas fa-arrow-right animated fadeInLeft infinite"></i></a>
+  </div>
+</section>
+<footer class="resCenter">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 bgPic">
+        <div class="bgMid row"></div>
+        <div class="row py-3">
+          <div class="col-lg-9 ml-auto">
+            <div class="gradBar"></div>
+            <h1 class="py-3 text-white">LET'S GET CONNECTED</h1>
+            <p class="py-3 pr-lg-5 mr-lg-5 text-white">Lorem ipsum dolor sit amet, cotetur ad, sed do eiusmod tempor incididunt dolor sit amet, consectetur ut la, sed do eiusmod tempor incididunt ut labore et dolore laborum.</p>
+            <ul class="social py-4">
+              <li class="red"><i class="fab fa-facebook-f"></i></li>
+              <li class="red"><i class="fab fa-linkedin-in"></i></li>
+              <li class="red"><i class="fab fa-twitter"></i></li>
+              <li class="red"><i class="fab fa-youtube"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 pl-0 bgGray">
+        <div class="bgMid"></div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/assets/img/logo-head.png" class="img-fluid p-5 logoOp">
+          </div>
+          <div class="col-md-3">
+            <ul class="subLinks">
+              <li>Our websites</li>
+              <li>Careers</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="subLinks">
+              <li>Investors</li>
+              <li>News</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center text-secondary legal">
+          &copy; 2018 by Gustavo Barragán <a href="#">Legal Notice</a> <a href="#">Terms of use</a> <a href="#">Cookies policy</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

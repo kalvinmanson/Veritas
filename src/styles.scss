@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+$enable-rounded: false;
+$red: #fa3954;
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import 'animate.css/animate.min.css';
+@import 'bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700');
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.delay05 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count:1;
+}
+.delay10 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count:1;
+}
+.delay15 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-iteration-count:1;
+}
+.delay20 {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count:1;
+}
+a:hover {
+  text-decoration: none;
+}
+*:focus, input:focus{
+  outline: none;
+}
